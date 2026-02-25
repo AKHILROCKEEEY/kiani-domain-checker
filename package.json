@@ -1,0 +1,25 @@
+{
+  "name": "@kianilab/domain-checker",
+  "version": "1.0.0",
+  "description": "Brand name research and domain availability checker for Claude Code",
+  "bin": {
+    "domain-checker": "bin/install.js"
+  },
+  "files": [
+    "bin",
+    "commands",
+    "domain-checker"
+  ],
+  "engines": {
+    "node": ">=16.7.0"
+  },
+  "keywords": [
+    "claude-code",
+    "domain-checker",
+    "brand-naming",
+    "whois",
+    "dns"
+  ],
+  "author": "Arash Kiani",
+  "license": "MIT"
+}
